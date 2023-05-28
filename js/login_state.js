@@ -5,6 +5,31 @@ function getCookie(name) {
 	return cookieValue ? cookieValue.pop() : ''
 }
 
+function showNotification(message) {
+	var notification = document.createElement('div')
+	notification.classList.add('custom-notification')
+	notification.textContent = message
+	document.body.appendChild(notification)
+
+	var previousNotificationsHeight = 0
+
+	var previousNotifications = document.getElementsByClassName(
+		'custom-notification'
+	)
+	for (var i = 0; i < previousNotifications.length; i++) {
+		previousNotificationsHeight += previousNotifications[i].offsetHeight + 7
+	}
+
+	notification.style.bottom = previousNotificationsHeight + 'px'
+
+	setTimeout(function () {
+		notification.style.opacity = '0'
+		setTimeout(function () {
+			document.body.removeChild(notification)
+		}, 1000)
+	}, 5000)
+}
+
 var isLoggedIn = getCookie('isLoggedIn')
 
 document.addEventListener('DOMContentLoaded', function () {
