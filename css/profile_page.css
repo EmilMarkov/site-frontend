@@ -1,0 +1,248 @@
+/*=======================ОБЩИЕ СТИЛИ=======================*/
+input[type='text'],
+input[type='password'] {
+	width: 70%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #fff;
+	color: #000;
+	font-weight: 900;
+}
+
+button[type='submit']:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+label {
+	color: #fff;
+}
+/*=======================ОБЩИЕ СТИЛИ=======================*/
+
+/*=======================КОНТЕЙНЕРЫ=======================*/
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.auth {
+	display: none;
+	max-width: 30%;
+	margin: 0 auto;
+}
+
+.auth h1 {
+	color: var(--text-color);
+}
+/*=======================КОНТЕЙНЕРЫ=======================*/
+
+/*=======================ФОРМЫ=======================*/
+.form-group {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.registration-form {
+	display: none;
+	text-align: center;
+}
+
+.login-form {
+	display: none;
+	text-align: center;
+}
+
+.registration-form__link {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+.login-form__link {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: var(--text-color);
+	cursor: pointer;
+}
+/*=======================ФОРМЫ=======================*/
+
+/*=======================СПЕЦ КЛАССЫ=======================*/
+.auth.show {
+	display: block;
+}
+
+.login-form.show {
+	display: block;
+}
+
+.registration-form.show {
+	display: block;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.custom-notification {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #673ab7;
+	border-radius: 4px;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+/*=======================СПЕЦ КЛАССЫ=======================*/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.sidebar {
+	width: 200px;
+	background-color: #000000;
+}
+
+.sidebar-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-item {
+	padding: 10px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.menu-item.active {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+}
+
+.content {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.results-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.results-list li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.results-list li .list-text {
+	flex-grow: 1;
+	padding-right: 10px;
+}
+
+.results-list li .view-button {
+	background-color: #FF7400;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.results-list li .view-button:hover {
+	background-color: #894b17;
+}
+
+.input-container {
+	margin-bottom: 15px;
+}
+
+.input-container label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.input-container input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.data-form button {
+	background-color: #000000;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.data-form button:hover {
+	background-color: #141414;
+}
+
+.custom-notification {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 4px;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+.mdc-list {
+	list-style: none;
+	padding: 0;
+}
+
+.mdc-list-item {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.mdc-list-item__text {
+	margin-right: 16px;
+	color: #fff;
+}

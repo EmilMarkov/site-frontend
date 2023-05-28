@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Невидомый 9</title>
+	<link rel="stylesheet" type="text/css" href="../css/n9.css" />
+	<link rel="stylesheet" type="text/css" href="../css/profile_page.css" />
+	<link rel="shortcut icon" href="../src/img/favicon.ico" />
+</head>
+
+<body>
+	<div class='container'>
+		<br>
+		<p class="cursor typewriter-animation">Профиль</p>
+		<div id="header">
+			<div id="navigation">
+				<ul id="menu">
+					<li><a href="../index.html">Главная</a></li>
+					<li><a href="./history.html">История Солнечной системы</a></li>
+					<li><a href="./planets.html">О планетах</a></li>
+					<li><a href="./feedback.html">Связь с нами</a></li>
+					<li><a href="./data.html">Мои данные</a></li>
+					<li><a href="./auth.html">Войти</a></li>
+					<label class="theme-switch" for="theme-checkbox">
+						<input type="checkbox" id="theme-checkbox">
+						<span class="slider round"></span>
+					</label>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div id='auth' class="auth show">
+				<form class="login-form show" id="login-form">
+					<h1>Авторизация</h1>
+					<div class="form-group">
+						<input type="text" id="email" name="email" placeholder='Почта' required>
+					</div>
+					<div class="form-group">
+						<input type="password" id="password" placeholder='Пароль' name="password" required>
+					</div>
+					<button type="submit">Войти</button>
+					<a class="registration-form__link">Регистрация</a>
+				</form>
+				<form class="registration-form" id="registration-form">
+					<h1>Регистрация</h1>
+					<div class="form-group">
+						<input type="text" id="r-firstname" placeholder='Имя' name="r-firstname" required>
+					</div>
+					<div class="form-group">
+						<input type="text" id="r-lastname" placeholder='Фамилия' name="r-lastname" required>
+					</div>
+					<div class="form-group">
+						<input type="text" id="r-email" placeholder='Почта' name="r-email" required>
+					</div>
+					<div class="form-group">
+						<input type="password" id="r-password" placeholder='Пароль' name="r-password" required>
+					</div>
+					<button type="submit">Зарегистрироваться</button>
+					<a class="login-form__link">Уже есть аккаунт?</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src='../js/auth.js'></script>
+	<script src='../js/login_state.js'></script>
+
+</body>
+
+</html>

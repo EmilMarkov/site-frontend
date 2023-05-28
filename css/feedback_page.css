@@ -1,0 +1,53 @@
+.feedback-container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type='text'],
+input[type='tel'],
+textarea {
+	width: 100%;
+	height: 35px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: 900;
+}
+
+button[type='submit']:hover {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+}
+
+.custom-notification {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 4px;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
