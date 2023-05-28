@@ -54,7 +54,7 @@ loginForm.addEventListener('submit', event => {
 		password: loginForm.querySelector('#password').value,
 	}
 
-	fetch('https://nevidomiy-production.up.railway.app/login', {
+	fetch('https://site-backend-production.up.railway.app/login', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ registrationForm.addEventListener('submit', event => {
 		password: registrationForm.querySelector('#r-password').value,
 	}
 
-	fetch('https://nevidomiy-production.up.railway.app/register', {
+	fetch('https://site-backend-production.up.railway.app/register', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
