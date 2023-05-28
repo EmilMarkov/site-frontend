@@ -123,7 +123,7 @@ function sendFeedback() {
 		message: [...oldMessages, messageData],
 	}
 
-	fetch('https://nevidomiy-production.up.railway.app/postmessages', {
+	fetch('https://site-backend-production.up.railway.app/postmessages', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
